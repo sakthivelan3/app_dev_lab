@@ -41,11 +41,23 @@ public class pattern {
             System.out.print("\n");                                //Calculating the stars in the pattern-> 2*i+1
         }
     }
+    public void pattern3(int n){
+        for(int i=0;i<n;i++){
+            int num= 1;
+            for(int j=0;j<n-i;j++){
+                System.out.print(num);
+                num++;
+            }
+            System.out.print("\n");
+        }
+    }
     public static void main(String[] args) {
         pattern inp = new pattern();
         inp.pattern1(5);
         System.out.println("\n");
         inp.pattern2(6);
+        System.out.println("\n");
+        inp.pattern3(4);
 
     }
 }
